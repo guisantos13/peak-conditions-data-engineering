@@ -12,14 +12,18 @@ Este projeto se trata de um projeto pessoal, cujo intuito é desenvolver um pipe
 
 ## Mais detalhes
 ### Datalake
-O datalake será construído em cloud utilizando a estrutura da AWS (S3). <img align="center" height="50" width="50" src="https://icons8.com/icon/33039/amazon-web-services">
+O datalake será construído em cloud utilizando a estrutura da AWS (S3). <img align="center" height="50" width="50" src="https://user-images.githubusercontent.com/63247260/204093780-c383801a-0f86-4e9c-8504-8edfe508189e.png">
+
 
 ### IAC
-Todos os recursos serão provisionados utilizando o Terraform para garantir mais agilidade e qualidade na implantação dos recursos.<img align="center" height="50" width="50" src="https://icons8.com/icon/kEkT1u7zTDk5/terraform">
+Todos os recursos serão provisionados utilizando o Terraform para garantir mais agilidade e qualidade na implantação dos recursos.<img align="center" height="50" width="50" src="https://user-images.githubusercontent.com/63247260/204093858-e2e7d68a-0f2e-4bc9-b30d-29ce45020b0f.png">
 
 ### Infraestrutura do projeto
 <p align=center>
   <img src="https://drive.google.com/file/d/1jqO1JQFM_drGbjKAcDjWwIYRLBB6s_cD/view?usp=sharing" height=400/>
   </p>
 <p align=center>
+
+
+
 
