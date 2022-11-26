@@ -20,7 +20,7 @@ Todos os recursos serão provisionados utilizando o Terraform para garantir mais
 
 ### Infraestrutura do projeto
 <p align=center>
-  <img src="https://drive.google.com/file/d/1jqO1JQFM_drGbjKAcDjWwIYRLBB6s_cD/view?usp=sharing" height=400/>
+  <img src="https://github.com/guisantos13/eBird-data-engineering/blob/e4e689852fcc56b8488ed99aeb68959171db8030/Infraestrutura-eBird.drawio.png" />
   </p>
 <p align=center>
 
