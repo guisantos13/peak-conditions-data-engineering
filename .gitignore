@@ -1,2 +1,7 @@
 #Venv
 venv
+
+#Terraform
+.terraform
+terraform.tfstate.d
+.terraform.lock.hcl
