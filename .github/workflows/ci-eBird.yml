@@ -28,7 +28,7 @@ jobs:
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run teste with pycodestyle
       run: |
-        pycodestyle ingestion-data/ 
+        pycodestyle ingestion_data/ 
     - name: Run teste with pydocstyle
       run: |
         pydocstyle ingestion_data/
@@ -44,6 +44,6 @@ jobs:
         python-version: "3.9"
     - name: Testes unitários ingestion
       run: |
-        python -m unittest discover testes-ci/ingestion
+        python -m unittest discover testes-ci/ingestion -v
 
     
