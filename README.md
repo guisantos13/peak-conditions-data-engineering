@@ -23,7 +23,7 @@ Todos os recursos serão provisionados utilizando o Terraform para garantir mais
 
 ### Infraestrutura do projeto
 <p align=center>
-  <img src="https://github.com/guisantos13/peak-condition-data-engineering/blob/e4e689852fcc56b8488ed99aeb68959171db8030/Infraestrutura_peak_conditions.drawio.png" />
+  <img src="https://github.com/guisantos13/peak-conditions-data-engineering/blob/bd3f91c4a842359131c88b37925df146153a8ea2/Infraestrutura_peak_conditions.drawio.png" />
   </p>
 <p align=center>
 
