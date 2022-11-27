@@ -1,5 +1,5 @@
 from unittest import TestCase
-from ingestion_data.ingestion_data_ebird import *
+from ingestion_data.ingestion_data_peak_condition import *
 
 class TestIngestion(TestCase):
     def test_ingestion(self):

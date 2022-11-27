@@ -1,4 +1,4 @@
-"""Função respnsavél pelo consumo da API eBird."""
+"""Função responsavél pelo consumo da API eBird."""
 
 
 def soma(x, y):

@@ -2,7 +2,7 @@ variable "environment" {
   default = "dev"
 }
 variable "prefix" {
-  default = "eBird"
+  default = "peak_condition"
 }
 variable "bucket_data_engineering_prefix" {
   default = "data-engineering"   

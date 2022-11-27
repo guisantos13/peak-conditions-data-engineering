@@ -1,14 +1,17 @@
-# e-Bird Data Engineering
-## O que é o e-Bird?
-eBird é um banco de dados on-line de observações de aves fornecendo aos cientistas, pesquisadores e naturalistas amadores dados em tempo real sobre a distribuição e a abundância de aves.\
+# Peak_Conditions Data Engineering
+## O que é o Peak_Conditions?
+O 'Peak Conditions' é uma API que fornece dados com as condições meteorólogicas de mais de 10.000 montanhas.\
+As condições meteorológicas podem variar significativamente desde o início da trilha até o cume.\
+A API 'Peak Conditions' coleta dados climáticos relacionados aos picos das montanhas, a fim de ter uma ideia melhor de como serão as condições para caminhantes, alpinistas, montanhistas, cientistas da terra e da conservação ou qualquer outra pessoa que tenha motivos para estar em topo de uma montanha.\
+Você pode obter um relatório diário ou uma previsão estendida de 6 dias para mais de 10.000 montanhas ao redor do mundo.
 
-O eBird é o maior projeto de ciência cidadã relacionado à biodiversidade do mundo, com mais de 100 milhões de avistamentos de pássaros contribuídos a cada ano por eBirders em todo o mundo. Uma empresa colaborativa com centenas de organizações parceiras, milhares de especialistas regionais e centenas de milhares de usuários, o eBird é gerenciado pelo Cornell Lab of Ornithology.\
 
-Saiba mais : https://ebird.org/about
+
+Saiba mais : https://peak-conditions-api.herokuapp.com/
 
 ## Este projeto
-Este projeto se trata de um projeto pessoal, cujo intuito é desenvolver um pipeline de dados através do consumo da API do e-Bird, este projeto não possuí nenhum fim lucrativo e os dados podem ser acessados abertamente por qualquer pessoa que tenha interesse através deste [link](https://science.ebird.org/pt-BR/use-ebird-data).\
-[Documentação_da_API](https://documenter.getpostman.com/view/664302/S1ENwy59)
+Este projeto se trata de um projeto pessoal, cujo intuito é desenvolver um pipeline de dados através do consumo da API,este projeto não possuí nenhum fim lucrativo e os dados podem ser acessados abertamente por qualquer pessoa que tenha interesse através deste [link](https://rapidapi.com/SeanRogan/api/peak-conditions).\
+[Documentação_da_API](https://peak-conditions-api.herokuapp.com/documentation)
 
 ## Mais detalhes
 ### Datalake
@@ -20,7 +23,7 @@ Todos os recursos serão provisionados utilizando o Terraform para garantir mais
 
 ### Infraestrutura do projeto
 <p align=center>
-  <img src="https://github.com/guisantos13/eBird-data-engineering/blob/e4e689852fcc56b8488ed99aeb68959171db8030/Infraestrutura-eBird.drawio.png" />
+  <img src="https://github.com/guisantos13/peak-condition-data-engineering/blob/e4e689852fcc56b8488ed99aeb68959171db8030/Infraestrutura_peak_conditions.drawio.png" />
   </p>
 <p align=center>
 
