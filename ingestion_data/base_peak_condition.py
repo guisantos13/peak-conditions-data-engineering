@@ -38,7 +38,7 @@ def api_requests(url, key, host):
         list: nomes e id das montanhas
     """
     # Uma lista com todas as letras do alfabeto
-    initial_mountain_name = ["k2"]# list(string.ascii_lowercase)
+    initial_mountain_name = list(string.ascii_lowercase)
 
     mountains = []  # Uma lista que receberá os dados de todas as montanhas
     try:
