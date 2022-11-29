@@ -17,7 +17,6 @@ from datetime import date
 url = os.environ.get("API-URL")
 key = os.environ.get('API-KEY')
 host = os.environ.get('API-HOST')
-
 ###################################
 # Variavéis Projeto################
 ###################################
@@ -25,18 +24,18 @@ bucket = os.environ.get("STORAGE")
 prefix = os.environ.get("PREFIX")
 
 
-def api_requests(url, key, host):
+def api_requests(url):
     """Esta função recebe os argumentos para realizar o request na API\
     e retorna uma lista com nomes e id das montanhas.
 
     Args:
         url (string): url da API
-        key (string): chave da API
-        host (string): host da API
-
     Returns:
         list: nomes e id das montanhas
     """
+    global key
+    global host
+
     # Uma lista com todas as letras do alfabeto
     initial_mountain_name = list(string.ascii_lowercase)
 
@@ -55,7 +54,13 @@ def api_requests(url, key, host):
             if response.status_code == 200:
                 for name in ast.literal_eval(response.text):
                     mountains.append(name)
-        return mountains
+            else:
+                print(f"Response:{response.status_code}")
+                return response.status_code
+
+        print(f"Request realizada com sucesso : {len(mountains)} arquivos.")
+        save_parquet(mountains, bucket, prefix)
+        return "Success"
 
     except Exception as exc:
         print(f"Erro {exc}")
@@ -73,18 +78,16 @@ def save_parquet(dados, bucket, prefix):
     Returns:
         dict: retorna um dicionário com os arquivos e partições salvas no s3.
     """
+    print("---- Gerando o DF ----")
     df = pd.DataFrame(dados)
+    print("---- Salvando Arquivo Parquet no S3 -----")
     response = wr.s3.to_parquet(
         df=df,
         path=f"s3://{bucket}/{prefix}/base/base_{date.today().strftime('%Y%m%d')}.parquet"
     )
+    print(f"Arquivos Salvos : {response['paths']}")
     return response
 
 
-mountain_names = api_requests(url, key, host)
-if type(mountain_names) == list:
-    if len(mountain_names) > 0:
-        print(f"Request realizada com sucesso : {len(mountain_names)} arquivos.")
-
-response = save_parquet(mountain_names, bucket, prefix)
-print(f"Arquivos Salvos : {response['paths']}")
+if __name__ == '__main__':
+    api_requests("https://peak-conditions.p.rapidapi.com/search")
