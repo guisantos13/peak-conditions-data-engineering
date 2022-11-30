@@ -46,7 +46,7 @@ jobs:
       run: |
         pydocstyle ingestion_data/    
 
-  Testes:
+  teste_ingestion_request:
     runs-on: ubuntu-latest
     needs: adequacao_pydocstyle
     steps:
